@@ -16,7 +16,14 @@ class PermissionRequestScreen extends StatelessWidget {
       child: Scaffold(
         body: Container(
           color: context.theme.backgroundPrimaryColor,
-          child: BlocBuilder<PermissionScreenCubit, PermissionScreenState>(
+          child: BlocConsumer<PermissionScreenCubit, PermissionScreenState>(
+            listener: (context, state) {
+              if (state is PermissionScreenLoaded) {
+                state.mediaIsGranded && state.strorageIsGranded
+                    ? Navigator.pushNamed(context, '/home')
+                    : null;
+              }
+            },
             builder: (context, state) {
               return switch (state) {
                 PermissionScreenInitial() => const SizedBox(),
@@ -40,7 +47,7 @@ class PermissionRequestScreen extends StatelessWidget {
                           ),
                           const SizedBox(width: 10),
                           PermissionCheckBox(
-                            storageIsGranded: strorageIsGranded,
+                            isGranded: strorageIsGranded,
                           ),
                         ],
                       ),
@@ -57,7 +64,7 @@ class PermissionRequestScreen extends StatelessWidget {
                           ),
                           const SizedBox(width: 10),
                           PermissionCheckBox(
-                            storageIsGranded: strorageIsGranded,
+                            isGranded: mediaIsGranded,
                           ),
                         ],
                       ),
@@ -82,9 +89,9 @@ class PermissionRequestScreen extends StatelessWidget {
 }
 
 class PermissionCheckBox extends StatelessWidget {
-  final bool storageIsGranded;
+  final bool isGranded;
 
-  const PermissionCheckBox({super.key, required this.storageIsGranded});
+  const PermissionCheckBox({super.key, required this.isGranded});
 
   @override
   Widget build(BuildContext context) {
@@ -93,14 +100,14 @@ class PermissionCheckBox extends StatelessWidget {
       width: 30,
       child: DecoratedBox(
         decoration: BoxDecoration(
-          color: context.theme.buttonNotActiveColor,
+          color: isGranded
+              ? context.theme.buttonPrimaryColor
+              : context.theme.borderNotActiveColor,
           borderRadius: BorderRadius.circular(10),
         ),
         child: Icon(
-          Icons.check,
-          color: storageIsGranded
-              ? context.theme.iconSecondaryColor
-              : context.theme.iconSecondaryColor,
+          isGranded ? Icons.check : Icons.close,
+          color: context.theme.iconPrimaryColor,
         ),
       ),
     );

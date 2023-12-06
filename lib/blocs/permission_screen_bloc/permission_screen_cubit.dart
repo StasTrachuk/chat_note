@@ -10,12 +10,32 @@ class PermissionScreenCubit extends Cubit<PermissionScreenState> {
   bool _hasMediaPermission = false;
 
   PermissionScreenCubit() : super(PermissionScreenInitial()) {
-    init();
+    requestPermissions();
   }
 
-  void init() async {
-    await storageRequest();
-    await mediaRequest();
+  Future<void> requestPermissions() async {
+    emit(PermissionScreenLoading());
+    try {
+      if (Platform.isAndroid) {
+        final storageStatus = await Permission.manageExternalStorage.request();
+        _hasStoragePermission = storageStatus.isGranted;
+        final mediaStatus = await PhotoManager.requestPermissionExtend();
+        _hasMediaPermission = mediaStatus.hasAccess;
+      } else if (Platform.isIOS) {
+        final storageStatus = await Permission.storage.request();
+        _hasStoragePermission = storageStatus.isGranted;
+        _hasMediaPermission = true;
+      }
+
+      emit(
+        PermissionScreenLoaded(
+          strorageIsGranded: _hasStoragePermission,
+          mediaIsGranded: _hasMediaPermission,
+        ),
+      );
+    } catch (e) {
+      emit(PermissionScreenError(error: e.toString()));
+    }
   }
 
   Future<void> storageRequest() async {
@@ -42,9 +62,9 @@ class PermissionScreenCubit extends Cubit<PermissionScreenState> {
     emit(PermissionScreenLoading());
     try {
       if (Platform.isAndroid) {
-        final PermissionState storageStatus;
-        storageStatus = await PhotoManager.requestPermissionExtend();
-        _hasMediaPermission = storageStatus.hasAccess;
+        final PermissionState mediaStatus;
+        mediaStatus = await PhotoManager.requestPermissionExtend();
+        _hasMediaPermission = mediaStatus.hasAccess;
       } else {
         _hasMediaPermission = true;
       }
