@@ -1,4 +1,0 @@
-#Wed Dec 06 14:35:14 GET 2023
-base.0=/Volumes/Робота/Chat Notes/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
-path.0=classes.dex
-renamed.0=classes.dex
