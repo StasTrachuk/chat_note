@@ -4,7 +4,31 @@
             "outputFile": "com.example.home_work.app-mergeDebugResources-25:/values-v31/values-v31.xml",
             "map": [
                 {
-                    "source": "/Volumes/Робота/HomeWork/home_work/android/app/src/main/res/values-v31/styles.xml",
+                    "source": "/Volumes/Робота/Chat Notes/android/app/src/main/res/values-v31/styles.xml",
+                    "from": {
+                        "startLines": "3,-1",
+                        "startColumns": "4,-1",
+                        "startOffsets": "173,-1",
+                        "endLines": "11,-1",
+                        "endColumns": "12,-1",
+                        "endOffsets": "778,-1"
+                    },
+                    "to": {
+                        "startLines": "2,11",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,665",
+                        "endLines": "10,13",
+                        "endColumns": "12,12",
+                        "endOffsets": "660,829"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/stas/.gradle/daemon/7.5/com.example.home_work.app-mergeDebugResources-25:/values-v31/values-v31.xml",
+            "map": [
+                {
+                    "source": "/Volumes/Робота/Chat Notes/android/app/src/main/res/values-v31/styles.xml",
                     "from": {
                         "startLines": "3,15",
                         "startColumns": "4,4",

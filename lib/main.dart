@@ -44,7 +44,7 @@ class App extends StatelessWidget {
           return ThemeInherited(
             appTheme: state.theme,
             child: MaterialApp(
-              initialRoute: '/local_auth_screen',
+              initialRoute: '/permission_request',
               onGenerateRoute: (settings) => switch (settings.name) {
                 '/home' => MaterialPageRoute(
                     builder: (context) => const HomeScreen(),
@@ -60,9 +60,9 @@ class App extends StatelessWidget {
                 '/settings_screen' => MaterialPageRoute(
                     builder: (context) => const SettingsScreen(),
                   ),
-                '/local_auth_screen' => MaterialPageRoute(
-                    builder: (context) => const LocalAuthScreen(),
-                  ),
+                // '/local_auth_screen' => MaterialPageRoute(
+                //     builder: (context) => const LocalAuthScreen(),
+                //   ),
                 '/permission_request' => MaterialPageRoute(
                     builder: (context) => const PermissionRequestScreen(),
                   ),

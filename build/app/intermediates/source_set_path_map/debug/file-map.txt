@@ -18,18 +18,18 @@ com.example.home_work.app-fragment-1.6.0-16 /Users/stas/.gradle/caches/transform
 com.example.home_work.app-jetified-core-ktx-1.10.1-17 /Users/stas/.gradle/caches/transforms-3/f7cdfb73eaf400e8b2c346bb8e6d73ec/transformed/jetified-core-ktx-1.10.1/res
 com.example.home_work.app-lifecycle-livedata-core-2.6.1-18 /Users/stas/.gradle/caches/transforms-3/fb13d994a9c57675c3797fdb5edd3dc7/transformed/lifecycle-livedata-core-2.6.1/res
 com.example.home_work.app-jetified-startup-runtime-1.1.1-19 /Users/stas/.gradle/caches/transforms-3/ff5f5b0a71e9b3e49766bc82725fe9a1/transformed/jetified-startup-runtime-1.1.1/res
-com.example.home_work.app-debug-20 /Volumes/Робота/HomeWork/home_work/android/app/src/debug/res
-com.example.home_work.app-main-21 /Volumes/Робота/HomeWork/home_work/android/app/src/main/res
-com.example.home_work.app-pngs-22 /Volumes/Робота/HomeWork/home_work/build/app/generated/res/pngs/debug
-com.example.home_work.app-resValues-23 /Volumes/Робота/HomeWork/home_work/build/app/generated/res/resValues/debug
-com.example.home_work.app-rs-24 /Volumes/Робота/HomeWork/home_work/build/app/generated/res/rs/debug
-com.example.home_work.app-mergeDebugResources-25 /Volumes/Робота/HomeWork/home_work/build/app/intermediates/incremental/debug/mergeDebugResources/merged.dir
-com.example.home_work.app-mergeDebugResources-26 /Volumes/Робота/HomeWork/home_work/build/app/intermediates/incremental/debug/mergeDebugResources/stripped.dir
-com.example.home_work.app-merged_res-27 /Volumes/Робота/HomeWork/home_work/build/app/intermediates/merged_res/debug
-com.example.home_work.app-packaged_res-28 /Volumes/Робота/HomeWork/home_work/build/flutter_native_splash/intermediates/packaged_res/debug
-com.example.home_work.app-packaged_res-29 /Volumes/Робота/HomeWork/home_work/build/flutter_plugin_android_lifecycle/intermediates/packaged_res/debug
-com.example.home_work.app-packaged_res-30 /Volumes/Робота/HomeWork/home_work/build/local_auth_android/intermediates/packaged_res/debug
-com.example.home_work.app-packaged_res-31 /Volumes/Робота/HomeWork/home_work/build/permission_handler_android/intermediates/packaged_res/debug
-com.example.home_work.app-packaged_res-32 /Volumes/Робота/HomeWork/home_work/build/photo_manager/intermediates/packaged_res/debug
-com.example.home_work.app-packaged_res-33 /Volumes/Робота/HomeWork/home_work/build/shared_preferences_android/intermediates/packaged_res/debug
-com.example.home_work.app-packaged_res-34 /Volumes/Робота/HomeWork/home_work/build/sqflite/intermediates/packaged_res/debug
+com.example.home_work.app-debug-20 /Volumes/Робота/Chat Notes/android/app/src/debug/res
+com.example.home_work.app-main-21 /Volumes/Робота/Chat Notes/android/app/src/main/res
+com.example.home_work.app-pngs-22 /Volumes/Робота/Chat Notes/build/app/generated/res/pngs/debug
+com.example.home_work.app-resValues-23 /Volumes/Робота/Chat Notes/build/app/generated/res/resValues/debug
+com.example.home_work.app-rs-24 /Volumes/Робота/Chat Notes/build/app/generated/res/rs/debug
+com.example.home_work.app-mergeDebugResources-25 /Volumes/Робота/Chat Notes/build/app/intermediates/incremental/debug/mergeDebugResources/merged.dir
+com.example.home_work.app-mergeDebugResources-26 /Volumes/Робота/Chat Notes/build/app/intermediates/incremental/debug/mergeDebugResources/stripped.dir
+com.example.home_work.app-merged_res-27 /Volumes/Робота/Chat Notes/build/app/intermediates/merged_res/debug
+com.example.home_work.app-packaged_res-28 /Volumes/Робота/Chat Notes/build/flutter_native_splash/intermediates/packaged_res/debug
+com.example.home_work.app-packaged_res-29 /Volumes/Робота/Chat Notes/build/flutter_plugin_android_lifecycle/intermediates/packaged_res/debug
+com.example.home_work.app-packaged_res-30 /Volumes/Робота/Chat Notes/build/local_auth_android/intermediates/packaged_res/debug
+com.example.home_work.app-packaged_res-31 /Volumes/Робота/Chat Notes/build/permission_handler_android/intermediates/packaged_res/debug
+com.example.home_work.app-packaged_res-32 /Volumes/Робота/Chat Notes/build/photo_manager/intermediates/packaged_res/debug
+com.example.home_work.app-packaged_res-33 /Volumes/Робота/Chat Notes/build/shared_preferences_android/intermediates/packaged_res/debug
+com.example.home_work.app-packaged_res-34 /Volumes/Робота/Chat Notes/build/sqflite/intermediates/packaged_res/debug
